@@ -1,0 +1,8 @@
+@use "../../styles/global.scss" as*;
+nav{
+    .header-top{
+        padding-inline: 80px;
+        padding-block: 10px;
+        border-bottom:2px solid $primary_color;
+    }
+}
