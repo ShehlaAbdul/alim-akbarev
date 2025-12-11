@@ -6,3 +6,16 @@
     text-decoration: none;
     font-family: "Poppins", sans-serif;
 }
+body{
+    img{
+        height: 100%;
+        width:100%;
+    };
+    section{
+        padding-inline: 80px;
+        @media (max-width:768px){
+            padding-inline: 5%;
+        }
+        
+    }
+}

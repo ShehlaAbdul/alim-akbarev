@@ -5,4 +5,20 @@ nav{
         padding-block: 10px;
         border-bottom:2px solid $primary_color;
     }
+    .header-bottom{
+        padding: 10px;
+        position: sticky;
+        .logo-side{
+            width: 120px;
+            height: auto;
+            img{
+                object-fit: contain;
+            }
+        }
+        .navbar {
+            // border: 2px solid red; 
+            ul{
+            }
+        }
+    }
 }
