@@ -1,0 +1,48 @@
+@use "../../styles/global.scss" as *;
+
+#home-videos{
+    .home-videos{
+        .videos-head{
+        }
+        .videos-content{
+            margin-top: 20px;
+            .videos-card{
+                border: 1px solid #E1E1E1;
+                border-radius: 20px 0 0 20px;
+                overflow: hidden;
+                @media (max-width:992px){
+                    border-radius: 20px 20px;
+                }
+                
+            }
+        }
+        .video{
+            @media (max-width:1220px){
+                    border-radius: 20px 20px !important;
+                    overflow: hidden;
+                    max-height: 340px;
+                }
+           img{
+            object-fit: cover;
+           }
+        }
+        .text{
+            padding-inline-start: 20px;
+            @media (max-width:768px){
+                padding: 20px 10px;
+            }
+            .text-content{
+                padding: 70px 20px;
+            }
+            span{
+                font-size: 14px;
+                color: #2A2A2A;
+            };
+            p{
+                padding-top: 10px;
+                font-weight: 500;
+            }
+        }
+
+    }
+}
