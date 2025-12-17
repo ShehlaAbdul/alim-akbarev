@@ -53,7 +53,7 @@ function Header() {
               <Link>Ana Səhifə</Link>
             </li>
             <li>
-              <Link>Haqqımızda</Link>
+              <Link to={"/about"}>Haqqımızda</Link>
             </li>
             <li>
               <Link>Əməliyyatlar</Link>

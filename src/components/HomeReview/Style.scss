@@ -30,6 +30,7 @@
       display: flex;
       align-items: flex-end;
       padding: 0;
+      overflow: hidden;
     }
 
     .slider-wrapper {
@@ -148,7 +149,7 @@
       }
 
       .slider-content {
-        width: 100%;
+        width: 90%;
       }
 
       .arrows-mobile {
