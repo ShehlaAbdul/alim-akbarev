@@ -1,0 +1,41 @@
+
+#note-section{
+    background-image: url("../../assets/images/NotesSec.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 32px 5% 56px 5%;
+    margin-bottom: 130px;
+    .note-section{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        .note-btn{
+            padding:10px 22px ;
+            border: none;
+            border-radius: 6px;
+            background-color: #F2F7FF;
+            color: #0089F0;
+            font-weight: 500;
+        }
+        p{
+            color: #FFFFFF;
+            font-size: 32px;
+            font-weight: 500;
+            text-align: center;
+            width: 80%;
+        }
+    }
+    @media (max-width:768px){
+        margin-bottom: 80px;
+        .note-section{
+            gap: 16px;
+            p{
+                font-size: 24px;
+                width: 100%;
+            }
+        }
+    }
+}

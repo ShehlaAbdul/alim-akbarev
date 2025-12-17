@@ -9,6 +9,7 @@ import Linkedin from "../../assets/icons/linkedin.svg";
 import Logo from "../../assets/images/LogoLight.webp"
 import MainBtn from "../../components/MainBtn/MainBtn";
 import { HiMiniBars3 } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 
 function Header() {
@@ -46,19 +47,47 @@ function Header() {
         <div className="logo-side">
           <img src={Logo} alt="" />
         </div>
-        <div className="navbar d-none d-md-block">
+        <div className="navbar d-none d-lg-block">
           <ul className="d-flex gap-3 g-0  m-0 p-0">
-            <li>Ana Səhifə</li>
-            <li>Haqqımızda</li>
-            <li>Əlaqə</li>
+            <li>
+              <Link>Ana Səhifə</Link>
+            </li>
+            <li>
+              <Link>Haqqımızda</Link>
+            </li>
+            <li>
+              <Link>Əməliyyatlar</Link>
+            </li>
+            <li>
+              <Link>Qalereya</Link>
+            </li>
+            <li>
+              <Link>Tibbi məlumatlar</Link>
+            </li>
+            <li>
+              <Link>Əlaqə</Link>
+            </li>
           </ul>
         </div>
         <div className="btn-side d-flex gap-2 align-items-center">
-          <div>
+          <div className="d-none d-lg-block">
             <MainBtn title={"Əlaqə"} />
           </div>
-          <HiMiniBars3 />
+          <div className="d-block d-lg-none">
+            {" "}
+            <HiMiniBars3 />
+          </div>
         </div>
+      </div>
+      <div className={`mobile-menu `}>
+        <div className="menu-header">
+          {/* <IoClose size={28} onClick={() => setMenuOpen(false)} /> */}
+        </div>
+        <ul>
+          <li>Ana Səhifə</li>
+          <li>Haqqımızda</li>
+          <li>Əlaqə</li>
+        </ul>
       </div>
     </nav>
   );

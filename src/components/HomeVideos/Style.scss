@@ -1,9 +1,12 @@
 @use "../../styles/global.scss" as *;
 
 #home-videos{
+    margin-bottom: 104px;
+    @media (max-width:768px){
+        margin-bottom: 64px;
+    }
     .home-videos{
-        .videos-head{
-        }
+     
         .videos-content{
             margin-top: 20px;
             .videos-card{

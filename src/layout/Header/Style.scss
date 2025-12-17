@@ -6,8 +6,7 @@ nav{
         border-bottom:2px solid $primary_color;
     }
     .header-bottom{
-        padding: 10px;
-        position: sticky;
+        padding: 10px 5%;
         .logo-side{
             width: 120px;
             height: auto;
@@ -21,4 +20,37 @@ nav{
             }
         }
     }
+    .mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  height: 100vh;
+  background: #fff;
+  border: 1px solid red;
+  z-index: 999;
+  padding: 20px;
+  transition: 0.3s ease;
+
+  &.open {
+    left: 0;
+  }
+
+  .menu-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  ul {
+    margin-top: 30px;
+    padding: 0;
+
+    li {
+      list-style: none;
+      margin-bottom: 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+}
+   }
 }

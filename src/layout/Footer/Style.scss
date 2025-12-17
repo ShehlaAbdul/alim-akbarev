@@ -1,0 +1,55 @@
+footer{
+    background-image: url("../../assets//images/footerLayout.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 80px 40px 80px;
+    @media (max-width:768px){
+        padding: 5%;
+    }
+    .footer{
+        p{
+            margin: 0;
+        }
+    }
+    .footer-top{
+        .logo-side{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-bottom: 32px;
+            .logo{
+                object-fit: contain;
+                width: 180px;
+                height:80px;
+                img{
+                    object-fit: contain;
+                    height: auto;
+                    width: auto;
+                }
+            }
+            .icons{
+                img{
+                  width:24px;
+                  height: 24px;
+                }
+            }
+        }
+        .links{
+            // gap: 60px;
+        }   
+        ul{
+            gap: 16px;
+            margin-top: 10px;
+            li{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+    }
+    .footer-bottom{
+        border-top: 1px solid #121111;
+        padding-top: 26px;
+    }
+}

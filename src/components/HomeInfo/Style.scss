@@ -1,0 +1,62 @@
+/* Style.scss daxilində HomeInfo üçün stillər */
+
+// 1. Ümumi Padding
+#home-info {
+  .home-info {
+   
+  }
+  .sec-head {
+    margin-bottom: 20px;
+  }
+}
+
+
+#home-info .g-card-space {
+    --bs-gutter-y: 40px; 
+    & > [class*='col-'] {
+        padding-right: calc(var(--bs-gutter-x) / 2);
+        padding-left: calc(var(--bs-gutter-x) / 2);
+        margin-bottom: var(--bs-gutter-y); 
+    }
+}
+
+
+#home-info {
+  .custom-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .card-img-top img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; // Medium
+    font-size: 18px;
+    line-height: 170%; // 170% x 18px = 30.6px
+    color: #333;
+    margin-bottom: 8px; // Təsvir mətni ilə başlıq arasındakı məsafə
+  }
+
+  // Təsvir Mətninin Stili
+  .card-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px; // Qısa təsvir üçün uyğun ölçü
+    line-height: 150%;
+    color: #666;
+  }
+}
