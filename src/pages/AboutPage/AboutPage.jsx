@@ -3,6 +3,7 @@ import "./Style.scss";
 import AboutHero from '../../components/AboutHero/AboutHero';
 import BreadCrumbBtn from '../../components/BreadCrumbBtn/BreadCrumbBtn';
 import AboutActivity from '../../components/AboutActivity/AboutActivity';
+import AboutExperience from '../../components/AboutExperience/AboutExperience';
 
 function AboutPage() {
   return (
@@ -10,8 +11,8 @@ function AboutPage() {
       <BreadCrumbBtn />
       <AboutHero />
       <AboutActivity />
-      
-    </>
+      <AboutExperience />
+    </> 
   );
 }
 

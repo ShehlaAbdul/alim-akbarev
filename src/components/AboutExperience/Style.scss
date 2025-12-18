@@ -1,0 +1,71 @@
+@use "../../styles/global.scss" as *;
+#about-experience {
+  .about-experience {
+    .experience-content {
+      .swiper {
+        padding-bottom: 40px;
+      }
+
+      .swiper-pagination {
+        bottom: 0 !important;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: $primary_color;
+        // width: 12px;
+        // height: 12px;
+      }
+      .experience-item {
+        background-color: #f2f7ff;
+        border: 1px solid #00baf7;
+        border-radius: 16px;
+        padding: 16px 16px;
+        text-align: center;
+        margin-top: 20px;
+        .title {
+          font-size: 18px;
+          width: 90%;
+          font-weight: 500;
+          margin: 0;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+  h1{
+      font-size: 32px;
+      margin-bottom: 40px;
+  }
+   ul{
+            line-height: 30px ;
+            list-style: disc;
+       li{
+         margin-left: 20px;
+       }
+        }
+  .about-articles{
+    margin-top: 100px;
+    .articles-content{
+       
+    }
+  }
+  .about-confrence{
+    margin-top: 100px;
+  }
+  .assosiation-members{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  @media (max-width:768px){
+    h1{
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .about-articles, .about-confrence, .assosiation-members{
+      margin-top: 56px;
+    }
+    .assosiation-members{
+        margin-bottom: 56px;
+    }
+  }
+}
