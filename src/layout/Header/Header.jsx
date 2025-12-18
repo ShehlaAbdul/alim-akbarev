@@ -56,8 +56,12 @@ function Header() {
               <Link to={"/about"}>Haqqımızda</Link>
             </li>
             <li>
+              <Link to={"/chancer-types"}>Xərçəng növləri</Link>
+            </li>
+            <li>
               <Link>Əməliyyatlar</Link>
             </li>
+
             <li>
               <Link>Qalereya</Link>
             </li>
