@@ -1,0 +1,51 @@
+@use "../../styles/global.scss"as*;
+#oncology-info{
+    h1{
+        font-size: 32px;
+        padding-bottom: 40px;
+    }
+    .oncology-info{
+        .img{
+            height: 400px;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            img{
+            object-fit: cover;
+            }
+        }
+    }
+    .other-cards{
+        margin-top: 56px;
+    }
+    .detail-card{
+       background-color:#F2F7FF;
+       border-radius: 20px;
+       padding:20px 40px;
+       margin-bottom: 40px;
+       align-items: center;
+       gap: 30px;
+       &:hover{
+           transition: all 300ms;
+           box-shadow: 1px 1px 7px #dcdee3;
+           .arrow{
+               background-color: $primary_color;
+               
+           }
+       }
+       h4{
+           font-size: 20px;
+           color: #121111;
+       }
+       .arrow{
+           padding: 10px;
+           width: 60px;
+           height: 60px;
+           border: 1px solid #0089F0;
+           border-radius: 50%;
+           img{
+               width: 36px;
+           }
+       }
+   }
+}

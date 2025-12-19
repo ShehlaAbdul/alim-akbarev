@@ -69,7 +69,7 @@ function Header() {
               <Link to={"/medical-info"}>Tibbi məlumatlar</Link>
             </li>
             <li>
-              <Link>Əlaqə</Link>
+              <Link to={"/contact-us"}>Əlaqə</Link>
             </li>
           </ul>
         </div>

@@ -4,6 +4,7 @@ import BreadCrumbBtn from "../../components/BreadCrumbBtn/BreadCrumbBtn";
 import { Swiper } from "swiper/react";
 import { SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 function ChancerTypes() {
   const chancerTypes = [
@@ -42,18 +43,22 @@ function ChancerTypes() {
               >
                 {chancerTypes.map((card) => (
                   <SwiperSlide key={card.id} className="slide">
+                    <Link to={`/cancer-detail/${card.id}`}>
                       <div className="chancer-card">
                         <p>{card.name}</p>
-                    </div>
+                      </div>
+                    </Link>
                   </SwiperSlide>
                 ))}
               </Swiper>
             ) : (
               chancerTypes.map((card) => (
                 <div className="" key={card.id}>
-                  <div className="chancer-card">
-                    <p>{card.name}</p>
-                  </div>
+                  <Link to={`/cancer-detail/${card.id}`}>
+                    <div className="chancer-card">
+                      <p>{card.name}</p>
+                    </div>
+                  </Link>
                 </div>
               ))
             )}

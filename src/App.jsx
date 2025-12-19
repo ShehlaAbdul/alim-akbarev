@@ -4,6 +4,9 @@ import MainLayout from "./layout/MainLayout";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import ChancerTypes from "./pages/ChancerTypes/ChancerTypes";
 import MedicalInfo from "./pages/MedicalInfo/MedicalInfo";
+import ContactPage from "./pages/ContactPage/ContactPage";
+import OncologyInfo from "./pages/OncologyInfo/OncologyInfo";
+import ChancerDetail from "./pages/ChancerDetail/ChancerDetail";
 
 function App() {
   return (
@@ -14,8 +17,11 @@ function App() {
           <Route element={<MainLayout />}>
             <Route index element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/chancer-types" element={< ChancerTypes />} />
+            <Route path="/chancer-types" element={<ChancerTypes />} />
+            <Route path="/cancer-detail/:id" element={<ChancerDetail />} />
             <Route path="/medical-info" element={<MedicalInfo />} />
+            <Route path="/contact-us" element={<ContactPage />} />
+            <Route path="/oncology-info/:id" element={<OncologyInfo />} />
           </Route>
         </Routes>
       </BrowserRouter>
