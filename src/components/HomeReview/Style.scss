@@ -128,7 +128,7 @@
     }
 
     /* RESPONSIVE */
-    @media (max-width: 991px) {
+    @media (max-width: 576px) {
       
 
       .slider-side {
@@ -136,11 +136,7 @@
         align-items: center;
       }
 
-      .slider-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+   
 
       .slider-container {
         .slider-arrow {
@@ -149,15 +145,15 @@
       }
 
       .slider-content {
-        width: 90%;
+        width:100%;
+        text-align: start;
       }
 
       .arrows-mobile {
         display: flex;
         gap: 14px;
         justify-content: center;
-        align-items: center;
-        margin-top: 24px;
+        margin-top: 14px;
 
         .slider-arrow-prev svg {
           transform: rotate(180deg);
@@ -172,7 +168,8 @@
       }
 
       .review-card {
-        text-align: center;
+      text-align: start;
+      padding: 0;
       }
     }
   }

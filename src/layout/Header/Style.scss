@@ -3,7 +3,7 @@ nav{
     .header-top{
         padding-inline: 80px;
         padding-block: 10px;
-        border-bottom:2px solid $primary_color;
+        border-bottom:2px solid #00BAF7;
     }
     .header-bottom{
         padding: 10px 5%;
@@ -20,14 +20,32 @@ nav{
             }
         }
     }
-    .mobile-menu {
+    .navbar ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1.5px;
+    background-color: #0d6efd; // istədiyin rəng
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+.mobile-menu {
   position: fixed;
   top: 0;
   left: -100%;
   width: 80%;
   height: 100vh;
-  background: #fff;
-  border: 1px solid red;
+  background-color: #fcfcfc; // ✅ istədiyin rəng
   z-index: 999;
   padding: 20px;
   transition: 0.3s ease;
@@ -39,18 +57,31 @@ nav{
   .menu-header {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 20px;
   }
 
   ul {
-    margin-top: 30px;
     padding: 0;
+    margin: 0;
 
     li {
       list-style: none;
-      margin-bottom: 20px;
-      font-size: 18px;
-      cursor: pointer;
+      padding: 12px 0;
+      border-bottom: 1px solid #00baf7; // ✅ border
+      font-size: 16px;
+
+      a {
+        text-decoration: none;
+        color: #000;
+        display: block;
+        width: 100%;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
     }
+  }
 }
-   }
+
 }

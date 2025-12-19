@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import { ScrollRestoration } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import MainLayout from "./layout/MainLayout";
 import AboutPage from "./pages/AboutPage/AboutPage";
@@ -17,7 +18,7 @@ function App() {
           <Route element={<MainLayout />}>
             <Route index element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/chancer-types" element={<ChancerTypes />} />
+            <Route path="/cancer-types" element={<ChancerTypes />} />
             <Route path="/cancer-detail/:id" element={<ChancerDetail />} />
             <Route path="/medical-info" element={<MedicalInfo />} />
             <Route path="/contact-us" element={<ContactPage />} />

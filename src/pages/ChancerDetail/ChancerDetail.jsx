@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Style.scss";
 import { useParams } from 'react-router-dom';
+import BreadCrumbBtn from '../../components/BreadCrumbBtn/BreadCrumbBtn';
 
 function ChancerDetail() {
    const cancerDetails = [
@@ -40,25 +41,33 @@ function ChancerDetail() {
 
     const { id } = useParams();
       const detail = cancerDetails.find((item) => item.id === Number(id));
-    if (!detail) return <p>Məlumat tapılmadı</p>;
+  if (!detail) return (
+    <>
+      <BreadCrumbBtn/>
+      <p>Məlumat tapılmadı</p>
+    </>
+  );
     
 
   return (
-    <section id="cancer-detail">
-      <div className="cancer-detail">
-        <h1>{detail.title}</h1>
-        {detail.sections.map((section, index) => (
-          <div key={index} className={`section ${section.type}`}>
-            <h3>{section.title}</h3>
-            <ul>
-              {section.items.map((item, idx) => (
-                <li key={idx}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    </section>
+    <>
+      <BreadCrumbBtn/>
+      <section id="cancer-detail">
+        <div className="cancer-detail">
+          <h1>{detail.title}</h1>
+          {detail.sections.map((section, index) => (
+            <div key={index} className={`section ${section.type}`}>
+              <h3>{section.title}</h3>
+              <ul>
+                {section.items.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
 

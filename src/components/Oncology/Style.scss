@@ -19,7 +19,7 @@
                 transition: all 300ms;
                 box-shadow: 1px 1px 7px #dcdee3;
                 .arrow{
-                    background-color: $primary_color;
+                    // background-color: $primary_color;
                     
                 }
             }
@@ -36,6 +36,9 @@
                 img{
                     width: 36px;
                 }
+            }
+            @media (max-width:576px){
+                padding: 10px 20px;
             }
         }
     }

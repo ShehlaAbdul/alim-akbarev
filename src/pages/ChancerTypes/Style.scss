@@ -34,6 +34,10 @@
       .slide {
         display: flex;
         justify-content: center;
+        width: 100%;
+        @media (max-width:576px){
+          display: block;
+        }
       }
       .chancer-card {
         border: 1px solid #0089f0;
@@ -53,10 +57,13 @@
           margin: 0;
           font-weight: 500;
         }
-        @media (max-width: 576px) {
-          width: 95% !important;
+        @media (max-width:576px){
+          width: 90%;
+          margin: 20px auto;
         }
       }
+      
     }
   }
+  
 }

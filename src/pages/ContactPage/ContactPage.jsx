@@ -11,7 +11,7 @@ function ContactPage() {
     <>
       <BreadCrumbBtn />
       <section id="contact">
-        <div className="contact row">
+        <div className="contact row g-0">
           <div className="col-12 col-md-5 p-0">
             <h1>Əlaqə</h1>
             <div className="contact-side d-flex flex-column">

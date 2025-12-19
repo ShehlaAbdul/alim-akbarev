@@ -53,11 +53,9 @@ function ChancerTypes() {
               </Swiper>
             ) : (
               chancerTypes.map((card) => (
-                <div className="" key={card.id}>
+                <div className="chancer-card" key={card.id}>
                   <Link to={`/cancer-detail/${card.id}`}>
-                    <div className="chancer-card">
                       <p>{card.name}</p>
-                    </div>
                   </Link>
                 </div>
               ))

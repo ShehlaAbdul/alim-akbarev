@@ -19,7 +19,9 @@ function Footer() {
         <div className="footer-top row">
           <div className="logo-side col-12 col-md-6">
             <div className="logo">
-              <img src={Logo} alt="" />
+              <Link to={"/"}>
+                <img src={Logo} alt="" />
+              </Link>
             </div>
             <p>Ümumi Cərrahiyyə üzrə Uzman Həkim</p>
             <div className="icons d-flex gap-2">
@@ -27,12 +29,12 @@ function Footer() {
                 {" "}
                 <img src={Instagram} alt="" />
               </div>
-              
+
               <div>
                 <img src={Facebook} alt="" />
               </div>
               <div>
-                <img src={Youtube} alt=""  />
+                <img src={Youtube} alt="" />
               </div>
               <div>
                 <img src={Linkedin} alt="" />
@@ -44,23 +46,27 @@ function Footer() {
               <h5>Sürətli keçid</h5>
               <li>
                 <LuChevronRight size={20} />
-                Ana Səhifə
+                <Link to="/">Ana Səhifə</Link>
               </li>
+
               <li>
                 <LuChevronRight size={20} />
-                Həkim haqqında
+                <Link to="/about">Həkim haqqında</Link>
               </li>
+
               <li>
                 <LuChevronRight size={20} />
-                Prosedurlar
+                <Link to="/medical-info">Prosedurlar</Link>
               </li>
+
               <li>
                 <LuChevronRight size={20} />
-                Qalereya
+                <Link to="/">Qalereya</Link>
               </li>
+
               <li>
                 <LuChevronRight size={20} />
-                Əlaqə
+                <Link to="/contact-us">Əlaqə</Link>
               </li>
             </ul>
             <ul className="col-12 col-md-6 d-flex flex-column">
@@ -69,7 +75,8 @@ function Footer() {
                 <div>
                   <img src={Location} alt="" />
                 </div>
-                Liv Bona Dea Hospital</li>
+                Liv Bona Dea Hospital
+              </li>
               <li>
                 <div>
                   <img src={Mail} alt="" />
@@ -89,7 +96,7 @@ function Footer() {
           <p>© Bütün hüquqlar qorunur.</p>
           <p>
             Sayt hazırlandı:
-            <Link> Birsayt.az</Link>
+            <Link to={"https://birsayt.az"}> Birsayt.az</Link>
           </p>
         </div>
       </div>
